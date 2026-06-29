@@ -14,6 +14,7 @@
   --grey-1:     #E2E8F4;
   --grey-2:     #8A9BBE;
   --grey-3:     #4A5878;
+  --grey-4:     #5e6b79;
 
   --font-display: 'DM Sans', sans-serif;
   --font-body:    'Inter', sans-serif;
@@ -187,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero__eyebrow {
   font-family: var(--font-display);
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -202,10 +203,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__subtitle {
-  font-size: 1.05rem;
-  color: var(--grey-2);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--grey-4);
   margin-bottom: 20px;
-  font-weight: 400;
 }
 
 .hero__bio {
@@ -258,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Photo */
 .hero__photo {
   position: relative;
-  width: 380px; height: 380px;
+  width: 400px; height: 400px;
   flex-shrink: 0;
 }
 .hero__photo img {
@@ -272,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   inset: -16px;
   border-radius: 50%;
-  border: 2px dashed var(--blue-glow);
+  border: 2px dashed white;
   opacity: 0.25;
   animation: spin 12s linear infinite;
 }
@@ -280,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   inset: -32px;
   border-radius: 50%;
-  border: 1px dashed var(--blue-glow);
+  border: 1px dashed white;
   opacity: 0.1;
   animation: spin 18s linear infinite reverse;
 }
