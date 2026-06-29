@@ -483,7 +483,18 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
   padding: 32px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.2);
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.edu-card__logo {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.edu-card__text {
+  text-align: left;
 }
 .edu-card__degree {
   font-size: 1.1rem;
@@ -810,6 +821,8 @@ h1, h2, h3, h4, h5, h6 {
   .projects__grid { grid-template-columns: 1fr; }
   .gallery { grid-template-columns: 1fr; }
   .gallery-item { aspect-ratio: 16 / 10; }
+  .edu-card { flex-direction: column; text-align: center; }
+  .edu-card__text { text-align: center; }
 
   .timeline::before { left: 16px; }
   .timeline__item {
