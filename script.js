@@ -100,6 +100,14 @@
     });
   }
 
+  /* ---------- Mouse Glow ---------- */
+  var mouseGlow = document.getElementById('mouseGlow');
+  if (mouseGlow) {
+    document.addEventListener('mousemove', function (e) {
+      mouseGlow.style.background = 'radial-gradient(600px circle at ' + e.clientX + 'px ' + e.clientY + 'px, rgba(29, 78, 216, 0.08), transparent 80%)';
+    }, { passive: true });
+  }
+
   /* ---------- Lightbox ---------- */
   (function initLightbox() {
     var lightbox = document.createElement('div');
