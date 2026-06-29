@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart 4S Battery Management System — Omar Mahmoud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <header class="project-topbar">
+    <div class="container">
+      <a href="../index.html" class="back-btn">
+        <span class="back-btn__arrow">&larr;</span> Back to Portfolio
+      </a>
+      <span class="topbar__name">Omar Mahmoud</span>
+    </div>
+  </header>
+
+  <section class="project-hero">
+    <div class="container">
+      <p class="project-hero__num reveal">Project 01</p>
+      <h1 class="project-hero__title reveal">Smart 4S Battery Management System</h1>
+    </div>
+  </section>
+
+  <div class="project-body">
+    <div class="container">
+
+      <div class="project-body__section reveal">
+        <h2 class="project-body__heading">Overview</h2>
+        <p class="project-body__text">Designed the full hardware architecture, schematic, and multi-layer PCB for a 4S lithium cell battery management system. The system provides comprehensive protection against overcurrent, overvoltage, and thermal faults, ensuring safe and reliable battery operation in demanding applications.</p>
+        <p class="project-body__text">Implemented an ESP32-based real-time monitoring system that continuously reads cell voltages, temperatures, and load current. Live data is displayed on-screen and transmitted via IoT protocols, while protective shutdowns are triggered automatically when thresholds are exceeded.</p>
+        <p class="project-body__text">The design was validated through multiple prototyping iterations, with each board tested under load to verify protection thresholds and monitoring accuracy before finalizing the production-ready layout.</p>
+      </div>
+
+      <div class="project-body__section reveal">
+        <h2 class="project-body__heading">Technologies</h2>
+        <div class="project-body__tags">
+          <span class="tag">ESP32</span>
+          <span class="tag">KiCad</span>
+          <span class="tag">Multi-layer PCB</span>
+          <span class="tag">BMS</span>
+          <span class="tag">Overcurrent Protection</span>
+          <span class="tag">Overvoltage Protection</span>
+          <span class="tag">Thermal Protection</span>
+          <span class="tag">Embedded C</span>
+          <span class="tag">IoT</span>
+          <span class="tag">Real-time Monitoring</span>
+        </div>
+      </div>
+
+      <div class="project-body__section reveal">
+        <h2 class="project-body__heading">Gallery</h2>
+        <div class="gallery">
+          <div class="gallery-item gallery-item--full">
+            <img src="../assets/bms-3d.png" alt="BMS 3D Model">
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/bms-layout.png" alt="BMS PCB Layout">
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/bms-screenshot.png" alt="BMS Screenshot">
+          </div>
+        </div>
+      </div>
+
+      <!--
+      <div class="project-body__section demo-section reveal">
+        <h2 class="project-body__heading">Demo</h2>
+        <video controls>
+          <source src="../assets/bms-demo.mp4" type="video/mp4">
+        </video>
+      </div>
+      -->
+
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

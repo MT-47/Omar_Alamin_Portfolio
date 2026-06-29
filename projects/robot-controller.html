@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Service Robot Controller — Omar Mahmoud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <header class="project-topbar">
+    <div class="container">
+      <a href="../index.html" class="back-btn">
+        <span class="back-btn__arrow">&larr;</span> Back to Portfolio
+      </a>
+      <span class="topbar__name">Omar Mahmoud</span>
+    </div>
+  </header>
+
+  <section class="project-hero">
+    <div class="container">
+      <p class="project-hero__num reveal">Project 03</p>
+      <h1 class="project-hero__title reveal">Hospital Service Robot Controller</h1>
+    </div>
+  </section>
+
+  <div class="project-body">
+    <div class="container">
+
+      <div class="project-body__section reveal">
+        <h2 class="project-body__heading">Overview</h2>
+        <p class="project-body__text">Designed a single-board integrated controller that consolidates motor drivers, encoder interfaces, multiple sensor inputs (ultrasonic, IR, IMU), and power management into one compact PCB for a ROS-based autonomous hospital service robot.</p>
+        <p class="project-body__text">The board replaces a fragile multi-board wiring setup, significantly improving system reliability and reducing assembly time for field deployment. The unified design minimizes inter-board cabling, reduces potential failure points, and simplifies maintenance procedures.</p>
+        <p class="project-body__text">The controller interfaces directly with the robot's ROS navigation stack, providing clean sensor data and reliable motor command execution. Custom firmware handles real-time motor control loops, sensor fusion, and fault detection at the hardware level.</p>
+      </div>
+
+      <div class="project-body__section reveal">
+        <h2 class="project-body__heading">Technologies</h2>
+        <div class="project-body__tags">
+          <span class="tag">ROS</span>
+          <span class="tag">KiCad</span>
+          <span class="tag">Motor Drivers</span>
+          <span class="tag">Encoder Interface</span>
+          <span class="tag">IMU</span>
+          <span class="tag">Ultrasonic Sensors</span>
+          <span class="tag">Power Management</span>
+          <span class="tag">Single-Board Design</span>
+          <span class="tag">Robotics</span>
+          <span class="tag">Embedded C++</span>
+        </div>
+      </div>
+
+      <div class="project-body__section reveal">
+        <h2 class="project-body__heading">Gallery</h2>
+        <div class="gallery">
+          <div class="gallery-item gallery-item--full">
+            <img src="../assets/robot-layout.jpg" alt="Robot Controller Layout">
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/robot-3d.jpg" alt="Robot Controller 3D Model">
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/robot-manufactured.jpg" alt="Manufactured Board">
+          </div>
+          <div class="gallery-item gallery-item--full">
+            <img src="../assets/robot.jpeg" alt="Hospital Service Robot">
+          </div>
+        </div>
+      </div>
+
+      <!--
+      <div class="project-body__section demo-section reveal">
+        <h2 class="project-body__heading">Demo</h2>
+        <video controls>
+          <source src="../assets/robot-demo.mp4" type="video/mp4">
+        </video>
+      </div>
+      -->
+
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
