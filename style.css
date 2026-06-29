@@ -256,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Photo */
 .hero__photo {
   position: relative;
-  width: 280px; height: 280px;
+  width: 380px; height: 380px;
   flex-shrink: 0;
 }
 .hero__photo img {
@@ -268,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hero__photo-ring {
   position: absolute;
-  inset: -12px;
+  inset: -16px;
   border-radius: 50%;
   border: 2px dashed var(--blue-glow);
   opacity: 0.25;
@@ -276,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hero__photo-ring2 {
   position: absolute;
-  inset: -24px;
+  inset: -32px;
   border-radius: 50%;
   border: 1px dashed var(--blue-glow);
   opacity: 0.1;
@@ -802,7 +802,7 @@ h1, h2, h3, h4, h5, h6 {
   .hero__text { max-width: 100%; }
   .hero__bio { max-width: 100%; }
   .hero__actions { justify-content: center; }
-  .hero__photo { margin: 0 auto; }
+  .hero__photo { margin: 0 auto; width: 280px; height: 280px; }
 
   .skills__grid { grid-template-columns: 1fr; }
   .projects__grid { grid-template-columns: 1fr; }
