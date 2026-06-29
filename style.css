@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Photo */
 .hero__photo {
   position: relative;
-  width: 380px; height: 380px;
+  width: 460px; height: 460px;
   flex-shrink: 0;
 }
 .hero__photo img {
@@ -820,7 +820,7 @@ h1, h2, h3, h4, h5, h6 {
   .hero__text { max-width: 100%; }
   .hero__bio { max-width: 100%; }
   .hero__actions { justify-content: center; }
-  .hero__photo { margin: 0 auto; width: 280px; height: 280px; }
+  .hero__photo { margin: 0 auto; width: 360px; height: 360px; }
 
   .skills__grid { grid-template-columns: 1fr; }
   .projects__grid { grid-template-columns: 1fr; }
