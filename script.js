@@ -102,10 +102,20 @@
 
   /* ---------- Mouse Glow ---------- */
   var mouseGlow = document.getElementById('mouseGlow');
-  if (mouseGlow) {
-    document.addEventListener('mousemove', function (e) {
-      mouseGlow.style.background = 'radial-gradient(600px circle at ' + e.clientX + 'px ' + e.clientY + 'px, rgba(29, 78, 216, 0.08), transparent 80%)';
+  var heroSection = document.getElementById('hero');
+  if (mouseGlow && heroSection) {
+    heroSection.addEventListener('mousemove', function (e) {
+      var rect = heroSection.getBoundingClientRect();
+      var x = e.clientX - rect.left;
+      var y = e.clientY - rect.top;
+      mouseGlow.classList.add('active');
+      mouseGlow.style.background =
+        'radial-gradient(400px circle at ' + x + 'px ' + y + 'px, rgba(29, 78, 216, 0.18), transparent 70%),' +
+        'radial-gradient(80px circle at ' + x + 'px ' + y + 'px, rgba(99, 179, 255, 0.12), transparent 60%)';
     }, { passive: true });
+    heroSection.addEventListener('mouseleave', function () {
+      mouseGlow.classList.remove('active');
+    });
   }
 
   /* ---------- Lightbox ---------- */
